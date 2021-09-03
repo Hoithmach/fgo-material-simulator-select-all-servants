@@ -11,7 +11,7 @@
 
 function selectAll() {
 
-    document.getElementById("chaldea_select14").click();
+    document.getElementById("chaldea_select15").click();
 
     var chaldeaSlide = document.getElementsByClassName("chaldea-slide")[0];
 
