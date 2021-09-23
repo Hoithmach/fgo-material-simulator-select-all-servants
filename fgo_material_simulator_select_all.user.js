@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FGO Material Simulator Select All Servants
 // @namespace    https://github.com/Hoithmach/fgo-material-simulator-select-all-servants
-// @version      0.1
+// @version      1.0
 // @description  Adds a "Select All" button to the inventory dialogue
 // @author       Hoithmach
 // @match        http://fgosimulator.webcrow.jp/Material/
@@ -11,20 +11,39 @@
 
 function selectAll() {
 
-    document.getElementById("chaldea_select15").click();
+    var chaldeaServant = document.getElementById("chaldea_servant");
 
-    var chaldeaSlide = document.getElementsByClassName("chaldea-slide")[0];
+    var selectClass = chaldeaServant.getElementsByClassName("select-class")[0];
 
-    var servantButtons = chaldeaSlide.getElementsByClassName("input_chaldea");
+    var classList = selectClass.getElementsByTagName("input");
 
-    const servantListLen = servantButtons.length;
+    const classListLen = classList.length - 1;
 
-    for (var i = 0; i < servantListLen; i++) {
+    for (var i = 0; i < classListLen; i++) {
 
-        servantButtons[0].click();
+        classList[i].click();
 
+        var chaldeaSlide = document.getElementsByClassName("chaldea-slide")[0];
+
+        var rarityRows = chaldeaSlide.children;
+
+        const rarityRowsLen = rarityRows.length;
+
+        for (var n = 0; n < rarityRowsLen; n++) {
+
+            var servantButtons = rarityRows[n].getElementsByClassName("input_chaldea");
+
+            const servantListLen = servantButtons.length;
+
+            for (var k = 0; k < servantListLen; k++) {
+
+                servantButtons[0].click();
+
+            };
+        };
     };
 };
+
 
 
 (function() {
