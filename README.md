@@ -2,10 +2,13 @@
 Userscript that adds a "Select All" button to the [FGO Material Simulator](http://fgosimulator.webcrow.jp/Material/) servant selector under the Inventory (EN) / My Chaldea (JP) / 所持アイテム (JP) dialogue which automates clicking on every servant icon manually. Avoids having to individually select all 100+ servants on your account. Tested with Tampermonkey on Firefox.
 
 ###### Known Issue~~s~~
-- The order the script selects in does not match any of the sort options within FGO. This is annoying and will **hopefully** be fixed *before* Gilfest 2.
+ - Slow
 
 
 ### Updates:
+#### v1.0
+Servants are now selected in class-rarity order, mirroring the in-game Class sorting option in the skill menu.
+
 #### v0.1
 Initial upload
 

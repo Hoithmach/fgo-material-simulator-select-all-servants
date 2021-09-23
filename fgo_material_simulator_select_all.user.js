@@ -33,11 +33,15 @@ function selectAll() {
 
             var servantButtons = rarityRows[n].getElementsByClassName("input_chaldea");
 
-            const servantListLen = servantButtons.length;
+            var servantButtonsArray = Array.prototype.slice.call(servantButtons, 0)
+
+            servantButtonsArray.reverse()
+
+            const servantListLen = servantButtonsArray.length;
 
             for (var k = 0; k < servantListLen; k++) {
 
-                servantButtons[0].click();
+                servantButtonsArray[k].click();
 
             };
         };
