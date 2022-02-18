@@ -5,6 +5,7 @@
 // @description  Adds a "Select All" button to the inventory dialogue
 // @author       Hoithmach
 // @match        http://fgosimulator.webcrow.jp/Material/
+// @match		 http://fgosim.github.io/Material/
 // @icon         https://www.webcrow.jp/images/common/favicon.ico
 // ==/UserScript==
 
