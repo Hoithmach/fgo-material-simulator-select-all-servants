@@ -6,6 +6,10 @@ Userscript that adds a "Select All" button to the [FGO Material Simulator](http:
 
 
 ### Updates:
+
+#### 18/02/2022
+Minor adjustment to new URL
+
 #### v1.0
 Servants are now selected in class-rarity order, mirroring the in-game Class sorting option in the skill menu.
 
